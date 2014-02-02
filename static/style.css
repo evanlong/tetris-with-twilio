@@ -1,0 +1,54 @@
+a { 
+  color: blue
+}   
+
+.lightbackground {
+  background: #E5E5FF;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.lightbackground_center {
+  background: #E5E5FF;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.segment {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  z-index: 1;
+}
+
+#header {
+  font-size:20pt;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#usermanage {
+  text-align: center;
+}
+
+#info {
+  padding: 10px;
+}
+
+#board {
+  position: absolute;
+  background: black;
+  z-index: 0;
+}
+
+#main {
+  width: 800px;
+  margin: auto;
+  background: #6688AA;
+  font-family: Verdana;
+  font-size: 14pt;
+  padding: 20px;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Gather action="/gather" method="POST" timeout="500" numDigits="1">
+    
+  </Gather>
+  <Redirect method="POST">
+    /gather
+  </Redirect>
+</Response>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Tetris with Twilio</title>
+    <link rel="stylesheet" 
+          href="{{ static_url("style.css") }}" 
+          type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header" class="lightbackground">
+        Tetris with Twilio
+      </div>
+      <div id="usermanage" class="lightbackground">
+        Enter your 10 digit phone number:
+        <input id="phone" type="text" value="{{ phone }}" />
+        <button id="submit_phone">Save</button><br />
+        <span id="submit_error" style="display: none; color: red;">
+          Please enter a valid number
+        </span>
+      </div>
+      <div class="lightbackground_center">
+        Call 425-440-0035 and the game will begin<br /><br />
+        Use the phone's number pad to move the blocks:<br />
+        2 - Rotate <br />
+        4 - Left <br />
+        5 - Down <br />
+        6 - Right <br />
+      </div>
+      <div id="info" class="lightbackground">
+        <div style="margin:auto; height:280px;width:140px;">
+          <span id="board"></span>
+        </div>
+      </div>
+      <div class="lightbackground_center">
+        Lines Cleared: <span id="lines_cleared">0</span>
+        <p>Clear 5 lines and you will be redirected to me. A great award!</p>
+      </div>
+      <div class="lightbackground_center">
+        <a href="/quit">Thanks for coming</a>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"
+            type="text/javascript"></script>
+    <script src="{{ static_url("channel.js") }}"
+            type="text/javascript"></script>
+    <script src="{{ static_url("game.js") }}"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-4849522-3");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
